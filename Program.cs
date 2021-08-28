@@ -1,44 +1,24 @@
 ﻿using System;
 
-namespace pascal_triangle
+namespace Quiz_08_28_2021
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int rows,b, i, j;
-            int a = 1;
-            Console.Write("Insert row : ");
-            rows = int.Parse(Console.ReadLine());
+            int y = 0;
+            int x = 0;
+            x = int.Parse(Console.ReadLine());
 
-            if (rows >= 0)
+            if (x == 1||x ==2)
             {
-                for (i = 0; i < rows; i++)
-                {
-                    for (b = 1; b <= rows - i; b++)
-                    {
-                        Console.Write(" ");
-                    }
-                    for (j = 0; j <= i; j++)
-                    {
-                        if (j == 0 || i == 0)
-                        {
-                            a = 1;
-                        }
-                        else
-                        {
-                            a = a * (i - j + 1) / j;
-                            Console.Write(a + " ");
-                        }
-                    }
-                    Console.WriteLine("\n");
-                }
+                y = 2+x
             }
-            else
+            else if ( x <= 5 && x >= 8)
             {
-                Console.WriteLine("Invalid Pascal's Triangle row number");
+                y = (3 * 2) + 2
             }
-            Console.ReadLine();
+            else if ()
         }
     }
 }
