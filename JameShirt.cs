@@ -10,17 +10,17 @@ namespace shirtShop
             tShirt J1 = new tShirt("L", "Red", 500f, "Nomad Symbol");
             tShirt J2 = new tShirt("M", "Green", 750f, "Street Kid Symbol");
             tShirt J3 = new tShirt("S", "Blue", 625f, "Corpo Symbol");
-            user all = new user("Jame Watson", "Jame@gmail.com");
+            user Jame = new user("Jame Watson", "Jame@gmail.com");
             Address location1 = new Address("Phutthamonthon", "Nakon Prathom", "10180");
 
-            all.sent();
-            all.shirt(J1);
-            all.shirt(J2);
-            all.shirt(J3);
+            Jame.sent();
+            Jame.shirt(J1);
+            Jame.shirt(J2);
+            Jame.shirt(J3);
             J1.tshirt1();
             J2.tshirt1();
             J3.tshirt1();
-            all.ADDress(location1);
+            Jame.ADDress(location1);
             location1.address1();
             Console.WriteLine("Total Cost : {0} Bath", J1.cost + J2.cost + J3.cost);
 
